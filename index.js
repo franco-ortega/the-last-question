@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
-const dark = document.querySelector('#dark');
-const rainbow = document.querySelector('#rainbow');
+const darkButton = document.querySelector('#dark');
+const rainbowButton = document.querySelector('#rainbow');
 
 const modeEnum = {
   dark: {
@@ -28,14 +28,14 @@ const turnOffMode = (button, mode) => {
 
 dark.addEventListener('click', () => {
   body.classList.toggle(modeEnum.dark.mode);
-  dark.textContent = dark.textContent === modeEnum.dark.title ? modeEnum.light.title : modeEnum.dark.title;
+  darkButton.textContent = darkButton.textContent === modeEnum.dark.title ? modeEnum.light.title : modeEnum.dark.title;
 
-  if(isThisModeOn(rainbow)) turnOffMode(rainbow, modeEnum.rainbow); 
+  if(isThisModeOn(rainbow)) turnOffMode(rainbowButton, modeEnum.rainbow); 
 });
 
 rainbow.addEventListener('click', () => {
   body.classList.toggle(modeEnum.rainbow.mode);
-  rainbow.textContent = rainbow.textContent === modeEnum.rainbow.title ? modeEnum.light.title : modeEnum.rainbow.title;
+  rainbowButton.textContent = rainbowButton.textContent === modeEnum.rainbow.title ? modeEnum.light.title : modeEnum.rainbow.title;
 
-  if(isThisModeOn(dark)) turnOffMode(dark, modeEnum.dark);
+  if(isThisModeOn(dark)) turnOffMode(darkButton, modeEnum.dark);
 });
