@@ -17,16 +17,58 @@ header {
 button {
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
+  width: 8rem;
   font-weight: 600;
   cursor: pointer;
-
-  background-color: hsl(0, 0%, 10%);
-  border-color: hsl(0, 0%, 10%);
   color: hsl(0, 0%, 96%);
 }
 
 button:hover {
   opacity: 85%;
+}
+
+.dark-button {
+  background-color: hsl(0, 0%, 10%);
+  border-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 96%);
+}
+
+.rainbow-button {
+  border-color: hsl(0, 0%, 10%);
+  background:
+    repeating-linear-gradient(
+      10deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.5) 80px,
+      rgba(255, 255, 0, 0.5) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 100, 255, 0.5) 200px,
+      rgba(75, 100, 130, 0.5) 240px,
+      rgba(238, 130, 238, 0.5) 280px,
+      rgba(255, 0, 0, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(255, 0, 0, 0.5) 30px,
+      rgba(255, 153, 0, 0.5) 60px,
+      rgba(255, 255, 0, 0.5) 90px,
+      rgba(0, 255, 0, 0.5) 120px,
+      rgba(0, 100, 255, 0.5) 150px,
+      rgba(75, 100, 130, 0.5) 180px,
+      rgba(238, 130, 238, 0.5) 210px,
+      rgba(255, 0, 0, 0.5) 230px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      red 50px,
+      orange 100px,
+      yellow 150px,
+      green 200px,
+      blue 250px,
+      indigo 300px,
+      violet 350px,
+      red 370px
+    );
 }
 
 main {
@@ -40,12 +82,19 @@ p {
   text-indent: 20px;
 }
 
+.credit {
+  text-align: left;
+  text-indent: 0px;
+}
+
+
+/* DARK MODE */
 .dark-mode {
   background-color: hsl(0, 0%, 10%);
   color: hsl(0, 0%, 96%);
 }
 
-.dark-mode button {
+.dark-mode .dark-button {
   background-color: hsl(60, 95%, 71%);
   border-color: hsl(60, 95%, 71%);
   color: hsl(0, 0%, 10%);
@@ -55,77 +104,48 @@ p {
   color: lightgreen;
 }
 
+/* RAINBOW MODE */
 .rainbow-mode {
-background: pink;
-background: repeating-linear-gradient(
-  270deg,
-  /* at 50% 0%, */
-  red,
-  orange,
-  yellow,
-  green,
-  blue,
-  violet),
-  repeating-linear-gradient(
-  270deg,
-  /* at 50% 0%, */
-  red,
-  orange,
-  yellow,
-  green,
-  blue,
-  violet);
-
-  background: repeating-linear-gradient(
-      190deg,
+  background:
+    repeating-linear-gradient(
+      10deg,
       rgba(255, 0, 0, 0.5) 40px,
       rgba(255, 153, 0, 0.5) 80px,
       rgba(255, 255, 0, 0.5) 120px,
       rgba(0, 255, 0, 0.5) 160px,
-      rgba(0, 0, 255, 0.5) 200px,
-      rgba(75, 0, 130, 0.5) 240px,
+      rgba(0, 100, 255, 0.5) 200px,
+      rgba(75, 100, 130, 0.5) 240px,
       rgba(238, 130, 238, 0.5) 280px,
       rgba(255, 0, 0, 0.5) 300px
-    ), repeating-linear-gradient(
+    ),
+    repeating-linear-gradient(
       -190deg,
       rgba(255, 0, 0, 0.5) 30px,
       rgba(255, 153, 0, 0.5) 60px,
       rgba(255, 255, 0, 0.5) 90px,
       rgba(0, 255, 0, 0.5) 120px,
-      rgba(0, 0, 255, 0.5) 150px,
-      rgba(75, 0, 130, 0.5) 180px,
+      rgba(0, 100, 255, 0.5) 150px,
+      rgba(75, 100, 130, 0.5) 180px,
       rgba(238, 130, 238, 0.5) 210px,
       rgba(255, 0, 0, 0.5) 230px
-    ), repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green
-        200px, blue 250px, indigo 300px, violet 350px, red 370px);
+    ),
+    repeating-linear-gradient(
+      23deg,
+      red 50px,
+      orange 100px,
+      yellow 150px,
+      green 200px,
+      blue 250px,
+      indigo 300px,
+      violet 350px,
+      red 370px
+    );
 }
 
-.rainbow-button {
-  background: repeating-linear-gradient(
-      190deg,
-      rgba(255, 0, 0, 0.5) 40px,
-      rgba(255, 153, 0, 0.5) 80px,
-      rgba(255, 255, 0, 0.5) 120px,
-      rgba(0, 255, 0, 0.5) 160px,
-      rgba(0, 0, 255, 0.5) 200px,
-      rgba(75, 0, 130, 0.5) 240px,
-      rgba(238, 130, 238, 0.5) 280px,
-      rgba(255, 0, 0, 0.5) 300px
-    ), repeating-linear-gradient(
-      -190deg,
-      rgba(255, 0, 0, 0.5) 30px,
-      rgba(255, 153, 0, 0.5) 60px,
-      rgba(255, 255, 0, 0.5) 90px,
-      rgba(0, 255, 0, 0.5) 120px,
-      rgba(0, 0, 255, 0.5) 150px,
-      rgba(75, 0, 130, 0.5) 180px,
-      rgba(238, 130, 238, 0.5) 210px,
-      rgba(255, 0, 0, 0.5) 230px
-    ), repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green
-        200px, blue 250px, indigo 300px, violet 350px, red 370px);
-}
-
+/* DARK MODE and RAINBOW MODE */
+.dark-mode .rainbow-button,
 .rainbow-mode .rainbow-button {
-  background: hsl(0, 0%, 10%);
-  color: hsl(0, 0%, 96%);
+  background-color: hsl(60, 95%, 71%);
+  border-color: hsl(60, 95%, 71%);
+  color: hsl(0, 0%, 10%);
 }
