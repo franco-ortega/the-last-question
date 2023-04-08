@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-inline: 2rem;
+}
+
+header {
+  width: fit-content;
+  margin-block: 1rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+button {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  background-color: hsl(0, 0%, 10%);
+  border-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 96%);
+}
+
+button:hover {
+  opacity: 85%;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 100ch;
+}
+
+p {
+  text-indent: 20px;
+}
+
+.dark-mode {
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 96%);
+}
+
+.dark-mode button {
+  background-color: hsl(60, 95%, 71%);
+  border-color: hsl(60, 95%, 71%);
+  color: hsl(0, 0%, 10%);
+}
+
+.dark-mode a {
+  color: lightgreen;
+}
