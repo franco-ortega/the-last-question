@@ -31,6 +31,8 @@ button:hover {
 main {
   margin-inline: auto;
   max-width: 100ch;
+
+  font-size: 1.15rem;
 }
 
 p {
